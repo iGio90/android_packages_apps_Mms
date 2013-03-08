@@ -45,8 +45,6 @@
     <item msgid="7691141505407124426">"sin asunto"</item>
   </string-array>
 
-    <!-- CYANOGENMOD ADDITIONS START -->
-
     <string-array name="pref_templates_gestures_sensitivity_entries">
       <item>1 (relajado)</item>
       <item>2</item>

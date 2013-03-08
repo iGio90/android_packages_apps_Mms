@@ -177,9 +177,7 @@
     <string name="pref_title_sms_delete" msgid="6890538316799296878">"Макс. количество SMS"</string>
     <string name="pref_title_mms_delete" msgid="7265878070847351664">"Макс. количество MMS"</string>
     <string name="pref_title_notification_enabled" msgid="9118792213953729414">"Уведомления"</string>
-    <string name="pref_summary_notification_enabled" msgid="619729096820999905">"Отображать уведомления о сообщениях в строке состояния"</string>
     <string name="pref_title_notification_vibrateWhen" msgid="4251208067092761057">"Вибросигнал"</string>
-    <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Вибросигнал при получении уведомления"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Выбрать рингтон"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Установить макс. кол-во сообщений в цепочке для хранения"</string>
   <string-array name="prefEntries_vibrateWhen">
@@ -187,7 +185,6 @@
     <item msgid="6069709696037750627">"Только в режиме без звука"</item>
     <item msgid="7486145357487111435">"Никогда"</item>
   </string-array>
-    <string name="prefDialogTitle_vibrateWhen" msgid="6419655771690242118">"Вибросигнал"</string>
     <string name="pref_title_mms_auto_retrieval" msgid="4021878285474431355">"Автозагрузка"</string>
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Автоматически загружать MMS-сообщения"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Автозагрузка в роуминге"</string>
@@ -365,24 +362,13 @@
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Дополнительные настройки</string>
-
-    <!-- Strip unicode -->
-    <string name="pref_title_unicode_stripping">Заменять юникод</string>
-    <string name="pref_unicode_stripping_leave_intact">Не заменять символы юникода</string>
-    <string name="pref_unicode_stripping_non_encodable">Заменять некодируемые символы</string>
-    <string name="pref_unicode_stripping_all">Заменять все символы юникода</string>
-
+    <string name="pref_char_settings">Настройки символов</string>
+    
     <!-- Enable emojis -->
-    <string name="pref_title_enable_emojis">Включить emoji</string>
-    <string name="pref_summary_enable_emojis">Включить поддержку emoji, набора из 471 отличных юникод смайликов</string>
+    <string name="pref_title_enable_emojis">Включить emojis</string>
+    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
 
     <string name="menu_insert_emoji">Вставить emoji</string>
-
-    <!-- Enable SoftBank emoji encoding -->
-    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
-    <string name="pref_summary_enable_softbank_encoding">Использовать кодировку SoftBank для emoji</string>
-
-    <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
     <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик (напр. 1/2)</string>
 
@@ -407,9 +393,13 @@
     <string name="template_not_present_error">Вы не определили шаблон</string>
     <string name="template_not_present_error_title">Ошибка</string>
     <string name="template_select">Выберите шаблон</string>
-    <string name="template_cancel_confirm_title">Внимание</string>
-    <string name="template_cancel_confirm_text">Желаете отменить?</string>
-    <string name="gestures_already_present">Внимание: подобный жест связан с другим шаблоном!</string>
+    <string name="template_confirm_dialog_title">Удалить?</string>
+    <plurals name="template_confirm_delete_conversation">
+    <item quantity="one">Один шаблон будет удален.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> шаблон(а/ов) будет(ут) удален(ы).</item>
+    </plurals>
+    <string name="gestures_already_present">Такой жест уже назначен на другой шаблон</string>
+    <string name="select_template">Выбрать шаблоны</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
     <string name="pref_title_mms_notification_vibrate_settings">Настройки вибрации</string>
@@ -419,9 +409,20 @@
     <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
+    
+    <!-- Strip unicode -->
+    <string name="pref_title_unicode_stripping">Раскрывать юникод</string>
+    <string name="pref_unicode_stripping_leave_intact">Оставить символы как есть</string>
+    <string name="pref_unicode_stripping_non_encodable">Заменить некодируемые символы</string>
+    <string name="pref_unicode_stripping_all">Заменить все неподдерживаемые символы обычными</string>
+    
     <!-- Enable quick emojis -->
     <string name="pref_title_enable_quick_emojis">Быстрая вставка emoji</string>
     <string name="pref_summary_enable_quick_emojis">Показать кнопку рядом с полем ввода текста для быстрого доступа к emoji</string>
+    
+    <!-- Enable SoftBank emoji encoding -->
+    <string name="pref_title_enable_softbank_encoding">Стандарт emoji on SoftBank</string>
+    <string name="pref_summary_enable_softbank_encoding">Использовать стандарт оператора SoftBank для кодирования emoji</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
@@ -461,6 +462,8 @@
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>
     <string name="qm_mark_read">Прочтено</string>
+    
+    <!-- Direct call -->
     <string name="direct_call_title">Быстрый вызов</string>
     <string name="direct_call_summary">Сразу набирать номер абонента при нажатии на номер, не используя кнопку вызова</string>
 
@@ -503,5 +506,22 @@
     <string name="pref_multi_select_summary">Выбрать несколько контактов \"галочкой\"</string>
     <string name="add_recipients">Добавить получателей</string>
     <string name="add_recipients_positive_button">Добавить</string>
+
+    <!-- Text area -->
+    <string name="pref_text_area_size_title">Размер текстовой области</string>
+    <string name="pref_text_area_size_summary">Установить текстовую область в <xliff:g id="lines">%1$s</xliff:g> строк</string>
+
+    <!-- Custom user-agent -->
+    <string name="pref_mms_ua_default_android">Обычный Android</string>
+    <string name="pref_mms_ua_nokia_n95">Nokia N95</string>
+    <string name="pref_mms_ua_iphone_3_0">iPhone (3.0)</string>
+    <string name="pref_mms_ua_blackberry_8800">BlackBerry 8800</string>
+    <string name="pref_mms_ua_sonyericsson_w800i">Sony Ericsson W800i</string>
+    <string name="pref_mms_ua_softbank_x01t">SoftBank X01T</string>
+    <string name="pref_mms_ua_softbank_myrmms">SoftBank MyrMMS</string>
+    <string name="pref_mms_ua_custom_option">Свой\u2026</string>
+    <string name="pref_title_mms_user_agent">User Agent</string>
+    <string name="pref_summary_mms_user_agent">Объявлять телефон как другую модель для работы MMS</string>
+    <string name="pref_mms_user_agent_custom_set">User Agent установлен на:\n</string>
 
 </resources>

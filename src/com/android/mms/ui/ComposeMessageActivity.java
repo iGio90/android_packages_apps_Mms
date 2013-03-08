@@ -2538,6 +2538,9 @@ public class ComposeMessageActivity extends Activity
     protected void onResume() {
         super.onResume();
 
+        // Init settings
+        initResourceRefs();
+
         // OLD: get notified of presence updates to update the titlebar.
         // NEW: we are using ContactHeaderWidget which displays presence, but updating presence
         //      there is out of our control.
@@ -3930,14 +3933,23 @@ public class ComposeMessageActivity extends Activity
     @Override
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         if (event != null) {
-            // if shift key is down, then we want to insert the '\n' char in the TextView;
-            // otherwise, the default action is to send the message.
-            if (!event.isShiftPressed() && event.getAction() == KeyEvent.ACTION_DOWN) {
+            boolean sendNow;
+            if (mInputMethod == InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE) {
+                //if the user has selected enter
+                //for a new line the shift key must be pressed to send
+                sendNow = event.isShiftPressed();
+            } else {
+                //otherwise enter sends and shift must be pressed for a new line
+                sendNow = !event.isShiftPressed();
+            }
+
+            if (sendNow && event.getAction() == KeyEvent.ACTION_DOWN) {
                 if (isPreparedForSending()) {
                     confirmSendMessageIfNeeded();
                 }
                 return true;
             }
+
             return false;
         }
 
@@ -4047,6 +4059,8 @@ public class ComposeMessageActivity extends Activity
         mTextEditor = (EditText) findViewById(R.id.embedded_text_editor);
         mTextEditor.setOnEditorActionListener(this);
         mTextEditor.addTextChangedListener(mTextEditorWatcher);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        mTextEditor.setMaxLines(prefs.getInt(MessagingPreferenceActivity.TEXT_AREA_SIZE, 3));
         mTextEditor.setFilters(new InputFilter[] {
                 new LengthFilter(MmsConfig.getMaxTextLimit())});
         mTextCounter = (TextView) findViewById(R.id.text_counter);

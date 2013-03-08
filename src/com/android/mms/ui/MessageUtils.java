@@ -404,7 +404,7 @@ public class MessageUtils {
     }
 
     public static int getAttachmentType(SlideshowModel model, MultimediaMessagePdu mmp) {
-        if (model == null) {
+        if (model == null || mmp == null) {
             return MessageItem.ATTACHMENT_TYPE_NOT_LOADED;
         }
 
@@ -435,7 +435,8 @@ public class MessageUtils {
             }
 
             // Handle the multimedia message only has subject
-            if (!TextUtils.isEmpty(mmp.getSubject().getString())) {
+            String subject = mmp.getSubject() != null ? mmp.getSubject().getString() : null;
+            if (!TextUtils.isEmpty(subject)) {
                 return WorkingMessage.TEXT;
             }
         }

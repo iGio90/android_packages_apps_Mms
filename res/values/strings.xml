@@ -354,15 +354,15 @@
     <!-- Settings item for boolean option to display message notifications -->
     <string name="pref_title_notification_enabled">Notifications</string>
     <!-- Settings item description for boolean message notification option -->
-    <string name="pref_summary_notification_enabled">Display message notifications in status bar</string>
     <!-- Settings item for boolean option to vibrate during message notification -->
     <string name="pref_title_notification_vibrateWhen">Vibrate</string>
     <!-- Settings item description for boolean vibrate option -->
-    <string name="pref_summary_notification_vibrateWhen">Also vibrate when notified</string>
     <!-- Settings item for entering ringtone selection screen -->
     <string name="pref_title_notification_ringtone">Choose ringtone</string>
     <!-- Settings item for setting the number of message to save for each conversation -->
     <string name="pref_messages_to_save">Set number of messages to save</string>
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <string name="silent_ringtone">Silent</string>
 
     <!-- The vibrate notification modes -->
     <string-array name="prefEntries_vibrateWhen">
@@ -374,8 +374,6 @@
         <item>Never</item>
     </string-array>
 
-    <!-- The default vibrateWhen value, when none is set -->
-    <string translatable="false" name="prefDefault_vibrateWhen">never</string>
     <!-- The value to use when migrating from old versions for a true vibrate setting -->
     <string translatable="false" name="prefDefault_vibrate_true">always</string>
     <!-- The value to use when migrating from old versions for a false vibrate setting -->
@@ -389,7 +387,6 @@
     </string-array>
 
     <!-- Dialog title for the Vibrate dialog -->
-    <string name="prefDialogTitle_vibrateWhen">Vibrate</string>
 
     <!-- Settings item for boolean option to auto-retrieve incoming MMS messages -->
     <string name="pref_title_mms_auto_retrieval">Auto-retrieve</string>
@@ -860,7 +857,6 @@
     <string name="template_confirm_dialog_title">Delete?</string>
     <plurals name="template_confirm_delete_conversation">
         <item quantity="one">One template will be deleted.</item>
-
         <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> templates will be deleted.</item>
     </plurals>
     <string name="gestures_already_present">A similar gesture is already associated with another template</string>
@@ -971,6 +967,10 @@
     <string name="add_recipients">Add recipients</string>
     <string name="add_recipients_positive_button">Add</string>
 
+    <!-- Text area -->
+    <string name="pref_text_area_size_title">Text area size</string>
+    <string name="pref_text_area_size_summary">Set text area to <xliff:g id="lines">%1$s</xliff:g> lines</string>
+
     <!-- Custom user-agent -->
     <string name="pref_mms_ua_default_android">Default Android</string>
     <string name="pref_mms_ua_nokia_n95">Nokia N95</string>
@@ -980,8 +980,8 @@
     <string name="pref_mms_ua_softbank_x01t">SoftBank X01T</string>
     <string name="pref_mms_ua_softbank_myrmms">SoftBank MyrMMS</string>
     <string name="pref_mms_ua_custom_option">Custom\u2026</string>
-    <string name="pref_title_mms_user_agent">Custom User-Agent</string>
+    <string name="pref_title_mms_user_agent">User Agent</string>
     <string name="pref_summary_mms_user_agent">Spoof phone as a different model for MMS</string>
-    <string name="pref_mms_user_agent_custom_set">Custom User Agent set to:\n</string>
+    <string name="pref_mms_user_agent_custom_set">ser Agent set to:\n</string>
 
 </resources>
