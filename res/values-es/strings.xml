@@ -402,4 +402,33 @@
     <string name="type_to_reply_text_enter_to_send">Escribir mensaje</string>
     <string name="toast_sending_message">Enviando mensaje\u2026</string>
     <string name="qm_quick_reply">Responder</string>
+    <string name="attach_contact_info">Información de contacto</string>
+    <!-- Multi Contact selector -->
+    <string name="pref_multi_select">Selector multiple</string>
+    <string name="pref_multi_select_summary">Selecciona múltiples contacto usando una casilla de verificación</string>
+    <string name="add_recipients">Agregar contacto</string>
+    <string name="add_recipients_positive_button">Agregar</string>
+    <string name="pref_title_save_location">Carpeta datos adjuntos</string>
+    <string name="pref_title_save_location_summary">Especificar carpeta para datos adjuntos.</string>
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Modo privacidad</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Ocultar remitente y mensaje en la barra de estado y deshabilitar la respuesta rápida</string>
+    <string name="notification_single_title_privacy_mode">Nuevo mensaje</string>
+    <string name="notification_single_text_privacy_mode">1 mensaje no leído</string>
+    <string name="notification_multiple_title_privacy_mode">Nuevos mensajes</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> mensajes no leídos</string>
+    <string name="notification_ticker_privacy_mode">Nuevo mensaje recibido</string>
+    <!-- Mms Breath -->
+    <string name="mms_breath">Destello MSM</string>
+    <string name="mms_breath_summary">Las notificaciones tendrán un efecto de destello.</string>
+    <!-- Enable quick emojis -->
+    <string name="pref_title_enable_quick_emojis">Botón rápido emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Mostrar un botón al lado de la entrada de texto para un rápido acceso a los emoji.</string>
+    <!-- Avatar -->
+    <string name="hide_avatar">Ocultar Avatar</string>
+    <string name="hide_avatar_summary">Ocultar avatar en la pantalla de conversación.</string>
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Tamaño fuente de mensaje</string>
+    <string name="pref_summary_mms_message_font_size">Cambiar tamaño de la fuente de mensajes visualizados</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Seleccionar tamaño de fuente</string>  
 </resources>
