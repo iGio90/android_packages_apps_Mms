@@ -352,7 +352,6 @@
 
     <!-- CYANOGENMOD ADDITIONS START -->
 
-    <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>
     <string name="button_close">Bezárás</string>
     <string name="button_view">Megtekintés</string>
     <string name="button_templates">Sablonok</string>
@@ -386,9 +385,6 @@
     <string name="prefs_templates_settings">SMS Sablonok</string>
     <string name="pref_title_templates_manage">Sablonok</string>
     <string name="pref_summary_templates_manage">SMS sablonok kezelése</string>
-    <string name="pref_title_templates_show_gesture">Kézmozdulat</string>
-    <string name="pref_summary_templates_show_gesture">Kézmozdulat útvonalának megjelenítése</string>
-    <string name="pref_title_template_gestures_sensitivity">Kézmozdulat érzékenysége</string>
     <string name="template_save">Mentés</string>
     <string name="template_insert_hint">Írja be a sablon szövegét</string>
     <string name="template_empty_text">A mező nem lehet üres.</string>

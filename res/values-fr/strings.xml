@@ -387,9 +387,6 @@
     <string name="prefs_templates_settings">Modèles SMS</string>
     <string name="pref_title_templates_manage">Modèles</string>
     <string name="pref_summary_templates_manage">Gérer vos modèles SMS</string>
-    <string name="pref_title_templates_show_gesture">Gestes</string>
-    <string name="pref_summary_templates_show_gesture">Afficher la trace du geste</string>
-    <string name="pref_title_template_gestures_sensitivity">Sensibilité du geste</string>
     <string name="template_save">Enregistrer</string>
     <string name="template_insert_hint">Insérer ici le modèle du texte</string>
     <string name="template_empty_text">Le champ de texte ne peut être vide</string>
