@@ -431,4 +431,34 @@
     <string name="insert_contact_info_positive_button">Insertar</string>
 
     <!-- CYANOGENMOD ADDITIONS END -->
+    
+    <string name="attach_contact_info">Información de contacto</string>
+    <!-- Multi Contact selector -->
+    <string name="pref_multi_select">Selector fácil</string>
+    <string name="pref_multi_select_summary">Seleccione varios contactos con una casilla de verificación</string>
+    <string name="add_recipients">Agregar destinatarios</string>
+    <string name="add_recipients_positive_button">Añadir</string>
+    <!-- Setting item for folder to save MMS Attachments to -->
+    <string name="pref_title_save_location">Carpeta de guardado para archivos adjuntos</string>
+    <string name="pref_title_save_location_summary">Especifique la carpeta para guardar los archivos adjuntos</string>
+    <!-- Mms Breath -->
+    <string name="mms_breath">Efecto respiración para los SMS</string>
+    <string name="mms_breath_summary">Le dará a las notificaciones de la barra de estado un efecto de respiración</string>
+    <!-- Enable quick emojis -->
+    <string name="pref_title_enable_quick_emojis">Botón rápido emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Mostrar un botón junto a la zona de entrada de texto para acceso rápido emoji</string>
+    <!-- Direct call -->
+    <string name="direct_call_title">Llamada directa</string>
+    <string name="direct_call_summary">Cogiendo el telefóno llama al contacto actual</string>
+    <!-- Avatar -->
+    <string name="hide_avatar">Ocultar Avatar</string>
+    <string name="hide_avatar_summary">Ocultar avatar en la pantalla de lista de conversaciones</string>
+    <!-- Message signature -->
+    <string name="msg_sig_title">Firma</string>
+    <string name="msg_sig_summary">Establecer una firma personalizada para los mensajes</string>
+    <string name="msg_sig_enter_text">Inserte el texto de la firma</string>
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Tamaño de la fuente del mensaje</string>
+    <string name="pref_summary_mms_message_font_size">Cambiar el tamaño de la fuente al ver el mensaje</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Seleccione el tamaño de la fuente</string>
 </resources>
