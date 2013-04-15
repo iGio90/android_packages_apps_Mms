@@ -412,4 +412,20 @@
     <string name="pref_keyboard_emoji">Exibir a tecla de Emoticons</string>
     <string name="pref_keyboard_unknown">Desconhecido, favor reselecionar</string>
     <string name="qm_mark_read">Lida</string>
+    <string name="pref_title_notification_privacy_mode_enabled">Modo de privacidade</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Ocultar remetente e mensagem na barra de status e desativar resposta Rápida</string>
+    <string name="notification_single_title_privacy_mode">Nova mensagem</string>
+    <string name="notification_single_text_privacy_mode">1 mensagem não lida</string>
+    <string name="notification_multiple_title_privacy_mode">Novas mensagens</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%1$s</xliff:g> mensagens não lidas</string>
+    <string name="notification_ticker_privacy_mode">Nova mensagem recebida</string>
+    <string name="menu_insert_contact_info">Inserir info. de contato</string>
+    <string name="cannot_find_contact">Não foi possível inserir informação do contato escolhido</string>
+    <string name="insert_contact_info_positive_button">Inserir</string>
+    <string name="pref_title_unicode_stripping">Retirar unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Manter caracteres intactos</string>
+    <string name="pref_unicode_stripping_non_encodable">Retirar caracteres não condificáveis</string>
+    <string name="pref_unicode_stripping_all">Retirar todos os caracteres unicode</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Usar codificação Softbank emoji</string>
 </resources>
