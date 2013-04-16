@@ -857,6 +857,7 @@
     <string name="template_not_present_error">There are no defined templates</string>
     <string name="template_not_present_error_title">Error</string>
     <string name="template_select">Select a template</string>
+    <string name="template_confirm_dialog_title">Delete?</string>
     <plurals name="template_confirm_delete_conversation">
         <item quantity="one">One template will be deleted.</item>
 
